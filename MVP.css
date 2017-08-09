@@ -22,3 +22,8 @@ img {
 h1 {
   font-size: 70px;
 }
+footer {
+  background-color: green;
+  background-opacity: .6;
+  font-size: 20px;
+}
