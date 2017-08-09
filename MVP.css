@@ -4,7 +4,8 @@ body {
   background-color: gray;
   opacity: .8;
   text-align: center;
-  background-size: 50%;
+  width: 70%;
+  margin-left: 15%;
 }
 html {
   background: url(http://i.imgur.com/XmqJlUP.jpg) no-repeat center center fixed;
@@ -12,7 +13,6 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-origin: content-box;
 }
 img {
   width: 50%;
@@ -24,6 +24,6 @@ h1 {
 }
 footer {
   background-color: green;
-  background-opacity: .6;
+  opacity: .6;
   font-size: 20px;
 }
