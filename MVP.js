@@ -1,3 +1,5 @@
+'usestrict;'
+
 var animal = prompt('Is my favorite animal a cat?');
 if (animal.toLowerCase() === 'yes' || animal.toLowerCase() === 'y') {
   alert('That is incorrect. It\'s a dog!');
