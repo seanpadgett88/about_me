@@ -55,14 +55,20 @@ if (home.toLowerCase() === 'yes' || home.toLowerCase() === 'y') {
 console.log('Am I from Washington?');
 console.log(home.toLowerCase());
 
-var favNum = prompt('What is my favorite number? It\'s somewhere between 1 and 10');
-var i = 0;
-while (i < 4) {
-i++; }
- if (favNum === 3) {
-  alert('That\'s correct!')
-} else if { (favNum !== 3)
-    alert('Try again!')
+var guessesSoFar = 0;
+var seansFavNumber = 1;
+
+while (guessesSoFar < 4) {
+  var userInputNumber = prompt('What is my favorite number? It\'s between 1 and 10. Good luck!');
+ if (parseInt(userInputNumber) === seansFavNumber) {
+   alert('Right-o!');
+   break;
+ } else if (parseInt(userInputNumber) > seansFavNumber && parseInt(userInputNumber) < 11) {
+   alert('That\'s a little too high!');
+ } else if (parseInt(userInputNumber) < seansFavNumber) {
+   alert('That\'s a little too low!');
+   guessesSoFar++
+ } else {
+      alert('Invalid input');
+    }
 }
-console.log('What is my favorite number? It\'s somwhere between 1 and 10')
-console.log(favNum);
