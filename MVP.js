@@ -72,3 +72,18 @@ while (guessesSoFar < 4) {
       alert('Invalid input');
     }
 }
+var statesIveLivedIn = ['California', 'Florida', 'Virginia'];
+var userGuesses = 0;
+
+while (userGuesses < 6) {
+  var state = prompt ('Can you guess 1 of the 3 states I\'ve lived in BESIDES Washington? You\'ve got 6 tries. Good luck!');
+  if (userGuesses === statesIveLivedIn[1] || statesIveLivedIn [2] || statesIveLivedIn [3]) {
+    alert ('That\'s one of them!');
+    break;
+  } else {
+      alert ('Almost! You have ' + userGuesses + ' remaining');
+        userGuesses++;
+    console.log('Can you guess 1 of the 3 states I\'ve lived in BESIDES Washington? You\'ve got 6 tries. Good luck!');
+    console.log(state);
+  }
+}
