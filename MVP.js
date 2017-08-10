@@ -1,12 +1,14 @@
 'usestrict';
 
+var answers = ['yes', 'y', 'no', 'n'];
+var questions = ['Is my favorite animal a cat?', 'Did I work at Stewart Lumber before coming to Code Fellows?', 'Is my favorite actor Leonardo DiCaprio?', 'Do I love woodworking?', 'Am I from Washington??'];
 var gameScore = 0;
 
 function favAnimal(){
-  var animal = prompt('Is my favorite animal a cat?');
-  if (animal.toLowerCase() === 'yes' || animal.toLowerCase() === 'y') {
+  var animal = prompt(questions[0]);
+  if (animal.toLowerCase() === answers[0] || animal.toLowerCase() === answers[1]) {
     alert('That is incorrect. It\'s a dog!');
-  } else if (animal.toLowerCase() === 'no' || animal.toLowerCase() === 'n') {
+  } else if (animal.toLowerCase() === answers[2] || animal.toLowerCase() === answers[3]) {
     alert('You are correct!');
     gameScore++;
   } else {
@@ -18,10 +20,10 @@ function favAnimal(){
 favAnimal();
 
 function lastJob(){
-  var lumber = prompt('Did I work at Stewart Lumber before coming to Code Fellows?');
-  if (lumber.toLowerCase() === 'yes' || lumber.toLowerCase() === 'y') {
+  var lumber = prompt(questions[1]);
+  if (lumber.toLowerCase() === answers[0] || lumber.toLowerCase() === answers[1]) {
     alert('That is incorrect, I worked for their rival store, Dunn Lumber');
-  } else if (lumber.toLowerCase() === 'no' || lumber.toLowerCase() === 'n') {
+  } else if (lumber.toLowerCase() === answers[2] || lumber.toLowerCase() === answers[3]) {
     alert('You are correct!');
     gameScore++;
   } else {
@@ -33,10 +35,10 @@ function lastJob(){
 lastJob();
 
 function favActor(){
-  var actor = prompt('Is my favorite actor Leonardo DiCaprio?');
-  if (actor.toLowerCase() === 'yes' || actor.toLowerCase() === 'y') {
+  var actor = prompt(questions[2]);
+  if (actor.toLowerCase() === answers[0] || actor.toLowerCase() === answers[1]) {
     alert('That is incorrect. He\'s a close second though!');
-  } else if (actor.toLowerCase() === 'no' || actor.toLowerCase() === 'n') {
+  } else if (actor.toLowerCase() === answers[2] || actor.toLowerCase() === answers[3]) {
     alert('You are correct!');
     gameScore++;
   } else {
@@ -48,11 +50,11 @@ function favActor(){
 favActor();
 
 function favHobby(){
-  var woodWork = prompt('Do I love woodworking?');
-  if (woodWork.toLowerCase() === 'yes' || woodWork.toLowerCase() === 'y') {
+  var woodWork = prompt(questions[3]);
+  if (woodWork.toLowerCase() === answers[0] || woodWork.toLowerCase() === answers[1]) {
     alert('You\'re damn right!');
     gameScore++;
-  } else if (woodWork.toLowerCase() === 'no' || woodWork.toLowerCase() === 'n') {
+  } else if (woodWork.toLowerCase() === answers[2] || woodWork.toLowerCase() === answers[3]) {
     alert('You must not know me');
   } else {
     alert('Please answer yes or no :)');
@@ -63,10 +65,10 @@ function favHobby(){
 favHobby();
 
 function stateQuestion(){
-  var home = prompt('Am I from Washington??');
-  if (home.toLowerCase() === 'yes' || home.toLowerCase() === 'y') {
+  var home = prompt(questions[4]);
+  if (home.toLowerCase() === answers[0] || home.toLowerCase() === answers[1]) {
     alert('Nope. I wish I was though, it\'s a great state!');
-  } else if (home.toLowerCase() === 'no' || home.toLowerCase() === 'n') {
+  } else if (home.toLowerCase() === answers[2] || home.toLowerCase() === answers[3]) {
     alert('You are correct! I\'m from California');
     gameScore++;
   } else {
