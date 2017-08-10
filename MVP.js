@@ -49,7 +49,7 @@ if (woodWork.toLowerCase() === 'yes' || woodWork.toLowerCase() === 'y') {
 console.log('Do I love woodworking?');
 console.log(woodWork.toLowerCase());
 
-var home = prompt('Am I from Washington?');
+var home = prompt('Am I from Washington??');
 if (home.toLowerCase() === 'yes' || home.toLowerCase() === 'y') {
   alert('Nope. I wish I was though, it\'s a great state!');
 } else if (home.toLowerCase() === 'no' || home.toLowerCase() === 'n') {
